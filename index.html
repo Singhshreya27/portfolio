@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(209, 229, 236);
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(74, 117, 132);
+            color: whitesmoke;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px; 
+        }
+
+        nav ul li a{
+        text-decoration: none;
+        color: white;
+        }
+
+        .intro {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .firstsection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px 0;
+        }
+
+        .content {
+            flex: 1;
+            text-align: center;
+            margin: 20px;
+            padding: 0 20px;
+            font-size: larger;
+        }
+
+        .photo {
+            flex: 1;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .photo img {
+            max-width: 100%;
+            max-height: 200px;
+            width: auto;
+            height: auto;
+        }
+
+        .cv {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: navajowhite;
+            color: #333;
+            text-decoration: none;
+            border: 1px solid #333;
+            border-radius: 5px;
+            font-size: 0.8rem;
+        }
+
+        footer {
+         background-color: rgb(74, 117, 132);
+         color: whitesmoke;
+         text-align: center;
+         padding: 10px;
+         margin-top: auto;
+         display: flex;
+         justify-content: center;
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: space-between; /* Distribute items evenly */
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin: 0 5px;
+        }
+
+        .insta {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+
+            nav ul {
+                margin-top: 10px;
+            }
+
+            .intro {
+                font-size: 1rem;
+            }
+
+            .firstsection {
+                margin-top: 30px;
+            }
+
+            .content,
+            .photo {
+                flex: auto;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><b>Shreya's Portfolio</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="portfolio.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="work experience.html">Work Experience</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="intro"><b><i>Step into my portfolio and witness the fusion of passion and expertise,
+                    igniting possibilities beyond imagination.</i></b></div>
+        <section class="firstsection">
+            <div class="content">
+                Shreya Singh, a dynamic second-year Bachelor of Computer Application student at Guru Gobind Singh
+                Indraprastha University, passionate about shaping the future through technology!<br><br>
+                <a href="CV Shreya.pdf" class="cv">Download Resume</a>
+            </div>
+            <div class="photo">
+                <img src="profilphoto.jpg">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="list">
+            <ul>
+                <li><a href="https://www.instagram.com/singh_.shreya_/"><img src="insta.jpg" class="insta"></a></li>
+                <li><a href="https://www.linkedin.com/in/shreya-singh-80b030256/"><img src="linkd.png" class="insta"></a></li>
+                <li><a href="mailto: singhshreya270805@gmail.com"><img src="mail.png" class="insta"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
